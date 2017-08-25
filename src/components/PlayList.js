@@ -45,9 +45,11 @@ class PlayList extends Component {
     });
 
     return (
-      <div>
-        <button onClick={this.fetchData} className="btn btn-success">Update List</button>
-        {songs}
+      <div id="musicList">
+        <button id="updateButton" onClick={this.fetchData} className="btn btn-success">Update List</button>
+        <div className="card-deck">
+          {songs}
+        </div>
       </div>
     )
   }

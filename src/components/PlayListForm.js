@@ -58,20 +58,20 @@ class PlayListForm extends Component {
 
   render() {
     return (
-      <form onSubmit={this.addToList}>
-        <label>User Name</label>
-        <input onChange={this.handleNameChange} name="userName" type="text" placeholder='Name or Username' value={this.state.userName} />
+      <form onSubmit={this.addToList} className="form-group" id="musicForm">
+        <label>Username: </label>
+        <input className="form-control" onChange={this.handleNameChange} name="userName" type="text" placeholder='Name or Username' value={this.state.userName} />
 
-        <label>Artist/Band</label>
-        <input onChange={this.handleArtistChange} name="songArtist" type="text" placeholder='Artist or Band Name' value={this.state.songArtist} />
+        <label>Artist/Band: </label>
+        <input className="form-control" onChange={this.handleArtistChange} name="songArtist" type="text" placeholder='Artist or Band Name' value={this.state.songArtist} />
 
-        <label>Song Title</label>
-        <input onChange={this.handleTitleChange} name="songTitle" type="text" placeholder='Song Title' value={this.state.songTitle} />
+        <label>Song Title: </label>
+        <input className="form-control" onChange={this.handleTitleChange} name="songTitle" type="text" placeholder='Song Title' value={this.state.songTitle} />
 
-        <label>Notes About Song:</label>
-        <textarea onChange={this.handleNotesChange} name="songNote" type="text" value={this.state.songNotes} />
+        <label>Notes About Song: </label>
+        <textarea className="form-control" onChange={this.handleNotesChange} name="songNote" type="text" value={this.state.songNotes} />
 
-        <button className="btn btn-primary" type="submit">Submit</button>
+        <button className="btn btn-primary" type="submit" id="formSubmitButton">Submit</button>
       </form>
     )
   }

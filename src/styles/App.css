@@ -1,24 +1,65 @@
-.App {
-  text-align: center;
+.form_list_wrapper {
+  display: flex;
+  /*flex-direction: row;*/
+  justify-content: space-between;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+#musicForm {
+  width: 45%;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+#musicList{
+  width: 50%;
+}
+
+#formSubmitButton {
+  margin-top: 4%;
+}
+
+#updateButton {
+  margin-bottom: 2%;
+}
+
+.listItem {
+  margin-bottom: 1.5%;
+}
+
+.listItem:first-child, #updateButton {
+  margin-left: 2.75%;
+}
+
+label {
   color: white;
+  text-shadow: 1.5px 1.5px black;
+  font-size: 1.25rem;
 }
 
-.App-intro {
-  font-size: large;
+label:not(first-child) {
+  margin-top: 3%;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.jumbotron {
+  text-shadow: 1px 1px grey;
+}
+
+.card, .btn, input, textarea, {
+  box-shadow: .75px .75px .75px .75px black;
+}
+
+@media (max-width: 768px) {
+  .form_list_wrapper {
+    display: block;
+  }
+
+  #musicForm, #musicList {
+    width: 100%;
+  }
+
+  #updateButton {
+    float: right;
+  }
+
+  .listItem:first-child {
+    clear: right;
+  }
 }

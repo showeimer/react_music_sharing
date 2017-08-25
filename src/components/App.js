@@ -11,8 +11,10 @@ class App extends Component {
     return (
       <div>
         <NavBar />
-        <PlayListForm />
-        <PlayList />
+        <div className="form_list_wrapper">
+          <PlayListForm />
+          <PlayList />
+        </div>
       </div>
     );
   }
