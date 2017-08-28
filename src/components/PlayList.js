@@ -47,7 +47,7 @@ class PlayList extends Component {
     return (
       <div id="musicList">
         <button id="updateButton" onClick={this.fetchData} className="btn btn-success">Update List</button>
-        <div className="card-deck">
+        <div className="songList">
           {songs}
         </div>
       </div>
